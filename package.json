@@ -1,0 +1,43 @@
+{
+  "name": "solarandlunar",
+  "version": "1.0.0",
+  "description": "公历农历转换",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pengtianyua/solarlunar.git"
+  },
+  "keywords": [
+    "公历农历",
+    "公历",
+    "农历"
+  ],
+  "author": "pengtianyu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pengtianyua/solarlunar/issues"
+  },
+  "homepage": "https://github.com/pengtianyua/solarlunar#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.9",
+    "@babel/runtime-corejs3": "^7.14.9",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.32.0",
+    "husky": "^7.0.1",
+    "webpack": "^5.48.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint src --fix --ext .js",
+      "commit-msg": "commitlint -e"
+    }
+  }
+}
